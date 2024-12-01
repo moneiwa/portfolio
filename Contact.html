@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Contact.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">Port<span>folio</span></div>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="contact-me">
+        <div class="container">
+            <h1>Contact Me</h1>
+            <div class="contact-info">
+                <p>If you would like to get in touch, please reach out via email or connect with me on LinkedIn.</p>
+                <ul>
+                    <div class="social-media">
+                        <a href="https://za.linkedin.com/in/muneiwa-sithagu-114354226" target="_blank">
+                            <img src="linkedin-icon.png" alt="LinkedIn">
+                        </a>
+                        <a href="malito:mhsithagu@gmail.com" target="_blank">
+                            <img src="email.icon.png" alt="Twitter">
+                        </a>
+                        <a href="https://github.com/moneiwa" target="_blank">
+                            <img src="github-icon.jpg" alt="GitHub">
+                        </a>
+                    </div>
+                    
+                </ul>
+            </div>
+            <div class="form-container">
+                <form action="https://formspree.io/f/mnnajaza" method="POST">
+                    <label for="name"></label>
+                    <input type="text" id="name" name="name" required placeholder="name">
+
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" required placeholder="email">
+
+                    <label for="message"></label>
+                    <textarea id="message" name="message" rows="4" required placeholder="message"></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
