@@ -50,6 +50,8 @@ a:hover {
     justify-content: center;
     flex-direction: column;
     height: 80vh;
+    position: relative;
+    z-index: 2; /* Ensure text appears above the circle */
 }
 
 h1 {
@@ -85,6 +87,7 @@ button:hover {
     background: #073362;
     border-radius: 50%;
     overflow: hidden;
+    z-index: 1; /* Ensure the circle stays behind the text */
 }
 
 .cercle img {
@@ -125,6 +128,7 @@ button:hover {
     .text {
         height: auto;
         padding: 20px;
+        z-index: 2; /* Ensure text stays above circle */
     }
 
     h1 {
@@ -145,8 +149,9 @@ button:hover {
 
     .cercle {
         width: 50%;
-        top: 15%;
+        top: 30%; /* Move it down so it doesn't overlap */
         right: 10px;
+        z-index: 1; /* Make sure it's behind the text */
     }
 
     .cercle img {
@@ -175,7 +180,7 @@ button:hover {
 
     .cercle {
         width: 60%;
-        top: 10%;
+        top: 40%; /* Further move down for even more space */
         right: 5px;
     }
 
