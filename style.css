@@ -123,5 +123,106 @@ button:hover {
 
 }
 
+/* Mobile Responsiveness: Adjustments for smaller screen sizes */
+@media screen and (max-width: 768px) {
+    header {
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        padding: 5%;
+    }
+
+    .logo {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    ul {
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    ul li {
+        display: inline-block;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    /* Stack Text and Image Vertically for Mobile */
+    .text {
+        flex-direction: column; /* Stack text and image vertically */
+        align-items: center;
+        padding: 20px;
+        height: auto;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    p {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    .cercle {
+        width: 50%;
+        top: 30%; /* Move it down for space */
+        right: 0;
+        margin-top: 20px;
+    }
+
+    .cercle img {
+        width: 100%;
+    }
+}
+
+/* Mobile Responsiveness: Very small screen (e.g., phones in portrait mode) */
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 24px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    button {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    .cercle {
+        width: 60%;
+        top: 40%;
+        right: 5px;
+        margin-top: 20px;
+    }
+
+    .cercle img {
+        width: 100%;
+    }
+}
 
 
