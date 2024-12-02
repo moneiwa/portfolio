@@ -1,13 +1,9 @@
-/* General Header and Navigation Styles */
 header {
     width: 70%;
     height: 100vh;
     background: #2c2424;
     color: #f1e0e0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
 }
 
 nav {
@@ -16,25 +12,26 @@ nav {
     justify-content: space-between;
     padding: 2% 6%;
 }
-
 .logo {
     font-size: 35px;
     font-weight: 600;
 }
-
 span {
     color: #d37e0e;
+
 }
 
 ul {
     text-align: right;
-}
 
+}
 ul li {
     display: inline-block;
     padding: 8px 12px;
     list-style: none;
+
 }
+
 
 a {
     color: #fff;
@@ -43,36 +40,41 @@ a {
     transition: 0.5s;
 }
 
+
+
 a:hover {
-    color: aqua;
+    color:aqua
 }
 
-/* Text and Image Layout (Large Screens) */
+
+
+
 .text {
     display: flex;
-    align-items: center; /* Align vertically */
-    justify-content: space-between; /* Space out text and image */
-    flex-direction: row; /* Arrange text and image in a row (side-by-side) */
-    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     height: 80vh;
-    position: relative;
-    padding: 20px;
 }
 
+
+
+
 h1 {
-    font-size: 55px;
-    margin: 0;
+font-size: 55px;
+
 }
 
 p {
-    margin-top: 30px;
+margin-top: 30px;
+
 }
 
 button {
     width: 255px;
     height: 60px;
     color: #131111;
-    background: #d37e0e;
+    background: #d37e0e;;
     border: 2px solid #050505;
     margin-top: 30px;
     font-size: 18px;
@@ -80,21 +82,30 @@ button {
     transition: 0.5s;
 }
 
+
+
+
 button:hover {
-    background: #d37e0e;
+    background: #d37e0e;;
+
 }
 
-/* Circle Section (Image on the right) */
+
 .cercle {
-    width: 25%;
+    position:absolute;
+    top:20%;
+    right: 20px;
+    width:25%;
     background: #073362;
     border-radius: 50%;
     overflow: hidden;
+
 }
 
 .cercle img {
-    width: 100%;
-    height: auto;
+    width:300px;
+    margin-left: 2%; 
+
 }
 
 /* Mobile Responsiveness: Adjustments for smaller screen sizes */
