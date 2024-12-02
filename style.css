@@ -164,6 +164,7 @@ button:hover {
         left: 50%;
         transform: translateX(-50%);
         z-index: 1;
+      background: #2c2424;
     }
 
     h1 {
