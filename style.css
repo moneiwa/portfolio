@@ -160,7 +160,7 @@ button:hover {
         align-items: center;
         padding: 20px;
         height: auto;
-        top: 30%;
+        top: 70%;
         left: 50%;
         transform: translateX(-50%);
         z-index: 1;
