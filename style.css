@@ -4,6 +4,10 @@ header {
     height: 100vh;
     background: #2c2424;
     color: #f1e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 nav {
@@ -43,19 +47,21 @@ a:hover {
     color: aqua;
 }
 
-/* Text Section */
+/* Text and Image Layout */
 .text {
     display: flex;
-    align-items: center;
-    justify-content: space-between; /* Ensures text and image are side by side */
-    flex-direction: row;
+    align-items: center; /* Align vertically */
+    justify-content: space-between; /* Space out text and image */
+    flex-direction: row; /* Arrange text and image in a row */
+    width: 100%;
     height: 80vh;
     position: relative;
-    z-index: 2;
+    padding: 20px;
 }
 
 h1 {
     font-size: 55px;
+    margin: 0;
 }
 
 p {
@@ -84,11 +90,10 @@ button:hover {
     background: #073362;
     border-radius: 50%;
     overflow: hidden;
-    z-index: 1;
 }
 
 .cercle img {
-    width: 100%; /* Ensures image fills the circle */
+    width: 100%;
     height: auto;
 }
 
@@ -97,6 +102,7 @@ button:hover {
     header {
         width: 100%;
         height: auto;
+        align-items: center;
     }
 
     nav {
@@ -123,10 +129,10 @@ button:hover {
     }
 
     .text {
-        height: auto;
-        padding: 20px;
         flex-direction: column; /* Stack text and image vertically */
-        align-items: center; /* Center text */
+        align-items: center;
+        padding: 20px;
+        height: auto;
     }
 
     h1 {
@@ -146,7 +152,7 @@ button:hover {
     }
 
     .cercle {
-        width: 50%; /* Reduce circle size on mobile */
+        width: 50%;
         top: 30%; /* Move it down for space */
         right: 0;
         margin-top: 20px;
@@ -181,7 +187,6 @@ button:hover {
         top: 40%;
         right: 5px;
         margin-top: 20px;
-        margin-left:50px;
     }
 
     .cercle img {
