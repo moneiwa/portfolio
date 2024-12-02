@@ -35,7 +35,19 @@ ul li {
 
 }
 
-
+.text {
+    display: flex;
+    align-items: center; /* Vertically center the text */
+    justify-content: space-between; /* Align text and image on both sides */
+    flex-direction: row; /* Text and image side by side */
+    height: 80vh;
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Adjust for perfect centering */
+    z-index: 1;
+    text-align: center;
+}
 a {
   color: #fff;
   font-size: 18px;
