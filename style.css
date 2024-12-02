@@ -48,8 +48,8 @@ a:hover {
 .text {
     display: flex;
     align-items: center; /* Vertically center the text */
-    justify-content: center;
-    flex-direction: column; /* Align text in a column */
+    justify-content: space-between; /* Align text and image on both sides */
+    flex-direction: row; /* Text and image side by side */
     height: 80vh;
     position: absolute;
     top: 50%; /* Center vertically */
@@ -134,7 +134,7 @@ button:hover {
 
     /* Stack Text and Image Vertically for Mobile */
     .text {
-        flex-direction: column;
+        flex-direction: column; /* Stack text and image vertically */
         align-items: center;
         padding: 20px;
         height: auto;
