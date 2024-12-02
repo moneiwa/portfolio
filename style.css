@@ -188,7 +188,7 @@ button:hover {
     .cercle {
         width: 50%;
         top: 70%; /* Move it down for space */
-        right: 10px;
+        right: 50%;
         margin-top: 90px;
     }
 
@@ -219,7 +219,7 @@ button:hover {
     .cercle {
         width: 60%;
         top: 90%;
-        right: 10px;
+        right: 50%;
         margin-top: 90px;
     }
 
