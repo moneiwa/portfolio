@@ -1,204 +1,114 @@
-/* General Header and Navigation Styles */
+
+
 header {
-    width: 70%;
-    height: 100vh;
-    background: #2c2424;
-    color: #f1e0e0;
-    position: relative;
+  width: 70%;
+  height: 100vh;
+  background: #2c2424;
+  color: #f1e0e0;
+
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2% 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2% 6%;
 }
-
 .logo {
-    font-size: 35px;
-    font-weight: 600;
+  font-size: 35px;
+  font-weight: 600;
 }
-
 span {
-    color: #d37e0e;
+  color: #d37e0e;
+
 }
 
 ul {
-    text-align: right;
+  text-align: right;
+
+}
+ul li {
+  display: inline-block;
+  padding: 8px 12px;
+  list-style: none;
+
 }
 
-ul li {
-    display: inline-block;
-    padding: 8px 12px;
-    list-style: none;
-}
 
 a {
-    color: #fff;
-    font-size: 18px;
-    text-decoration: none;
-    transition: 0.5s;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.5s;
 }
+
+
 
 a:hover {
-    color: aqua;
+  color:aqua
 }
 
-/* Text and Image Layout (Large Screens) */
+
+
+
 .text {
-    display: flex;
-    align-items: center; /* Vertically center the text */
-    justify-content: space-between; /* Align text and image on both sides */
-    flex-direction: row; /* Text and image side by side */
-    height: 80vh;
-    position: absolute;
-    top: 50%; /* Center vertically */
-    left: 50%;
-    transform: translate(-50%, -50%); /* Adjust for perfect centering */
-    z-index: 1;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 80vh;
 }
+
+
+
 
 h1 {
-    font-size: 55px;
-    margin: 0;
+font-size: 55px;
+
 }
 
 p {
-    margin-top: 30px;
+margin-top: 30px;
+
 }
 
 button {
-    width: 255px;
-    height: 60px;
-    color: #131111;
-    background: #d37e0e;
-    border: 2px solid #050505;
-    margin-top: 30px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: 0.5s;
+  width: 255px;
+  height: 60px;
+  color: #131111;
+  background: #d37e0e;;
+  border: 2px solid #050505;
+  margin-top: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.5s;
 }
+
+
+
 
 button:hover {
-    background: #d37e0e;
+  background: #d37e0e;;
+
 }
 
-/* Circle (Image on the right) */
+
 .cercle {
-    position: absolute;
-    top: 20%;
-    right: 20px;
-    width: 25%;
-    background: #073362;
-    border-radius: 50%;
-    overflow: hidden;
-    z-index: 0; /* Ensure the circle is behind the text */
+  position:absolute;
+  top:20%;
+  right: 20px;
+  width:25%;
+  background: #073362;
+  border-radius: 50%;
+  overflow: hidden;
+
 }
 
 .cercle img {
-    width: 100%;
-    height: auto;
+  width:300px;
+  margin-left: 2%; 
+
 }
 
-/* Mobile Responsiveness: Adjustments for smaller screen sizes */
-@media screen and (max-width: 768px) {
-    header {
-        width: 100%;
-        height: auto;
-        align-items: center;
-    }
 
-    nav {
-        flex-direction: column;
-        justify-content: center;
-        padding: 5%;
-    }
 
-    .logo {
-        font-size: 28px;
-        text-align: center;
-    }
-
-    ul {
-        text-align: center;
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    ul li {
-        display: inline-block;
-        padding: 10px;
-        font-size: 16px;
-    }
-
-    /* Stack Text and Image Vertically for Mobile */
-    .text {
-        flex-direction: column; /* Stack text and image vertically */
-        align-items: center;
-        padding: 20px;
-        height: auto;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 1;
-    }
-
-    h1 {
-        font-size: 40px;
-        text-align: center;
-    }
-
-    p {
-        margin-top: 20px;
-        text-align: center;
-    }
-
-    button {
-        width: 100%;
-        margin-top: 20px;
-        font-size: 16px;
-    }
-
-    .cercle {
-        width: 50%;
-        top: 30%; /* Move it down for space */
-        right: 0;
-        margin-top: 20px;
-    }
-
-    .cercle img {
-        width: 100%;
-    }
-}
-
-/* Mobile Responsiveness: Very small screen (e.g., phones in portrait mode) */
-@media screen and (max-width: 480px) {
-    .logo {
-        font-size: 24px;
-    }
-
-    h1 {
-        font-size: 32px;
-    }
-
-    p {
-        font-size: 14px;
-    }
-
-    button {
-        width: 80%;
-        font-size: 14px;
-    }
-
-    .cercle {
-        width: 60%;
-        top: 40%;
-        right: 5px;
-        margin-top: 20px;
-    }
-
-    .cercle img {
-        width: 100%;
-    }
-}
