@@ -186,7 +186,7 @@ button:hover {
         width: 50%;
         top: 70%; /* Move it down for space */
         right: 0;
-        margin-top: 20px;
+        margin-top: 70px;
     }
 
     .cercle img {
@@ -215,9 +215,9 @@ button:hover {
 
     .cercle {
         width: 60%;
-        top: 40%;
+        top: 70%;
         right: 5px;
-        margin-top: 20px;
+        margin-top: 70px;
     }
 
     .cercle img {
