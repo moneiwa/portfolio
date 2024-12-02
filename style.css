@@ -47,11 +47,11 @@ a:hover {
 .text {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-between; /* Ensures text and image are side by side */
+    flex-direction: row;
     height: 80vh;
     position: relative;
-    z-index: 2; /* Ensure text appears above the circle */
+    z-index: 2;
 }
 
 h1 {
@@ -80,19 +80,16 @@ button:hover {
 
 /* Circle Section */
 .cercle {
-    position: absolute;
-    top: 20%;
-    right: 20px;
     width: 25%;
     background: #073362;
     border-radius: 50%;
     overflow: hidden;
-    z-index: 1; /* Ensure the circle stays behind the text */
+    z-index: 1;
 }
 
 .cercle img {
-    width: 300px;
-    margin-left: 2%;
+    width: 100%; /* Ensures image fills the circle */
+    height: auto;
 }
 
 /* Mobile Responsiveness: Adjustments for smaller screen sizes */
@@ -128,7 +125,8 @@ button:hover {
     .text {
         height: auto;
         padding: 20px;
-        z-index: 2; /* Ensure text stays above circle */
+        flex-direction: column; /* Stack text and image vertically */
+        align-items: center; /* Center text */
     }
 
     h1 {
@@ -148,14 +146,14 @@ button:hover {
     }
 
     .cercle {
-        width: 50%;
-        top: 30%; /* Move it down so it doesn't overlap */
-        right: 10px;
-        z-index: 1; /* Make sure it's behind the text */
+        width: 50%; /* Reduce circle size on mobile */
+        top: 30%; /* Move it down for space */
+        right: 0;
+        margin-top: 20px;
     }
 
     .cercle img {
-        width: 150px;
+        width: 100%;
     }
 }
 
@@ -180,11 +178,12 @@ button:hover {
 
     .cercle {
         width: 60%;
-        top: 40%; /* Further move down for even more space */
+        top: 40%;
         right: 5px;
+        margin-top: 20px;
     }
 
     .cercle img {
-        width: 120px;
+        width: 100%;
     }
 }
