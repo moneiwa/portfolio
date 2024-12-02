@@ -110,7 +110,7 @@ button:hover {
 .cercle {
   position:absolute;
   top:20%;
-  right: 20px;
+  right: 50px;
   width:25%;
   background: #073362;
   border-radius: 50%;
@@ -119,7 +119,7 @@ button:hover {
 }
 
 .cercle img {
-  width:300px;
+  width:100%;
   margin-left: 2%; 
 
 }
